@@ -6,8 +6,8 @@ function Contact() {
         <Container className="text-center my-5">
             <h2>Contact Us</h2>
             <p>Email: contact@backstreetbarbers.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Visit us: 123 Backstreet, Your City, Your Country</p>
+            <p>Phone: +44 7535 212775</p>
+            <p>Visit us: 25 Everest Ln, Corby NN17</p>
         </Container>
     );
 }
