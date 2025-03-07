@@ -3,9 +3,15 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 function Services() {
     const services = [
-        { title: "Classic Haircut", price: "$25" },
-        { title: "Beard Trim", price: "$15" },
-        { title: "Hot Towel Shave", price: "$20" }
+        { title: "Bespoke haircut", price: "£20", link: "https://calendly.com/backstreetbarbers/bespoke-haircut"},
+        { title: "Out of hours haircut", price: "£20", link: "https://calendly.com/backstreetbarbers/out-of-hours-haircut"},
+        { title: "Beard only", price: "£20", link: "https://calendly.com/backstreetbarbers/beard-only"},
+        { title: "Long hair with the beard", price: "£20", link: "https://calendly.com/backstreetbarbers/long-hair-with-beard"},
+        { title: "Long hair", price: "£20", link: "https://calendly.com/backstreetbarbers/long-hair"},
+        { title: "Skin fade with beard", price: "£20", link: "https://calendly.com/backstreetbarbers/skin-fade-with-beard"},
+        { title: "Short Back and Sides with beard", price: "£20", link: "https://calendly.com/backstreetbarbers/short-back-and-sides-with-beard"},
+        { title: "Skin fade", price: "£20", link: "https://calendly.com/backstreetbarbers/skin-fade"},
+        { title: "Short Back and Sides", price: "£20", link: "https://calendly.com/backstreetbarbers/short-back-sides"},
     ];
 
     return (
@@ -18,7 +24,7 @@ function Services() {
                             <Card.Body>
                                 <Card.Title>{service.title}</Card.Title>
                                 <Card.Text>{service.price}</Card.Text>
-                                <Button variant="success" href="https://calendly.com/backstreetbarbers" target="_blank" rel="noopener noreferrer">
+                                <Button variant="success" href={service.link} target="_blank" rel="noopener noreferrer">
                                     Book Now
                                 </Button>
                             </Card.Body>
